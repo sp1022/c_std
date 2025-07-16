@@ -16,7 +16,10 @@ static int a=10; //全局作用域
 */
 void test01()
 {
+   
   static int b=20;//局部作用域
+  b++;
+  printf("b=%d",b);
 }
 
 int main()
@@ -27,4 +30,6 @@ int main()
   //使用extern
   printf("extern config debug_lelve=%d\n",debug_level);
   printf("extern config server_name=%s\n",server_name);
+  test01();
+  test01();
 }

@@ -31,6 +31,7 @@ void calcAarray(int arr[])//数组名传入到函数中，数组名退化为一�
 void test03()
 {
     int arr[]={1,2,3,4,5,6};
+    printf("arr占用内存空间bytes：%d",sizeof(arr));//该值打印为8
     //printf("arr占用内存空间bytes：%d",sizeof(arr));//该值打印为24
     calcAarray(arr);
 }
